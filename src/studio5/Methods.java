@@ -1,5 +1,7 @@
 package studio5;
 
+import java.awt.Color;
+
 import edu.princeton.cs.introcs.StdDraw;
 
 public class Methods {
@@ -30,6 +32,18 @@ public class Methods {
 	public static void drawBullsEye(double x, double y, double radius) {
 		StdDraw.setPenColor(StdDraw.BLACK);
 		StdDraw.filledCircle(x, y, radius);
+		
+		StdDraw.setPenColor(0, 109, 219);
+        StdDraw.filledCircle(x, y, radius * 3.0 / 4.0);
+
+        // 红色圆环，半径为 1.0/2.0
+        StdDraw.setPenColor(146, 0, 0);
+        StdDraw.filledCircle(x, y, radius * 1.0 / 2.0);
+
+        // 黄色圆环，半径为 1.0/4.0
+        StdDraw.setPenColor(255, 255, 109);
+        StdDraw.filledCircle(x, y, radius * 1.0 / 4.0);
+		
 
 		// TODO: Draw the remaining rings of the bull's eye
 		// Blue ring with 3.0/4.0 the radius
@@ -76,6 +90,10 @@ public class Methods {
 		int sum = 0;
 		// FIXME: Compute the sum of the values in an array
 		
+		for (int value : values) {
+	        sum += value;
+	    }
+		
 		return sum;
 	}
 
@@ -87,8 +105,13 @@ public class Methods {
 	 * @return and array of size that's filled with value
 	 */
 	public static int[] filledArray(int length, int value) {
-		int[] values = null; // FIXME: Create an array of the appropriate size
+		int[] values = new int[length]; // FIXME: Create an array of the appropriate size
 		// TODO: Finish this method
+		
+		
+		for (int i = 0; i < length; i++) {
+	        values[i] = value;
+	    }
 
 		
 
