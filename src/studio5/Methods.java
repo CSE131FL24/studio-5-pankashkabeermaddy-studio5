@@ -36,11 +36,11 @@ public class Methods {
 		StdDraw.setPenColor(0, 109, 219);
         StdDraw.filledCircle(x, y, radius * 3.0 / 4.0);
 
-        // 红色圆环，半径为 1.0/2.0
+
         StdDraw.setPenColor(146, 0, 0);
         StdDraw.filledCircle(x, y, radius * 1.0 / 2.0);
 
-        // 黄色圆环，半径为 1.0/4.0
+
         StdDraw.setPenColor(255, 255, 109);
         StdDraw.filledCircle(x, y, radius * 1.0 / 4.0);
 		
@@ -76,6 +76,8 @@ public class Methods {
 	public static String substituteAll(String source, char target, String replacement) {
 		String result = "";
 		// TODO: Finish this method
+		
+		
 		
 		return result;
 	}
